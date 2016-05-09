@@ -25,6 +25,11 @@
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
 
+    <style>
+      b {
+        color: yellow;
+      }
+    </style>
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
@@ -36,9 +41,13 @@
 
       <div class="slides">
         <section
-        data-background-video="videos/heat_vision.mp4"
+        data-background-video="videos/wasmback.mp4"
+        data-background-video-loop="loop"
         data-background-color="#000">
-          <h2>Give your Web App Superpowers with WebAssembly and Friends</h2>
+        <h2>Give your Web App<br/>
+          <b>Superpowers</b>
+          with WebAssembly<br/>
+          and Friends</h2>
           <p>
             <small>May 11, 2016 - <a href="http://flagxor.com">Brad Nelson</a> / <a href="http://twitter.com/flagxor">@flagxor</a></small>
           </p>
@@ -88,18 +97,20 @@
         <section
         data-background-video="videos/slime.mp4"
         data-background-color="#000">
-        <h2>Magic Words (Jargon)</h2>
+        <h2>Jargon</h2>
         <ul>
           <li class="fragment">
-          <b>Na</b>tive <b>Cl</b>ient &rarr; <b>NaCl</b></li>
-          <li class="fragment">
-          <b>P</b>ortable <b>Na</b>tive <b>Cl</b>ient
-          &rarr; <b>PNaCl</b></li>
+          <b>W</b>eb <b>As</b>se<b>m</b>bly &rarr; <b>Wasm</b></li>
           <li class="fragment">
           <b>Em</b>script<b>en</b>
           &rarr; [<b>Put into</b>] script [<b>become</b>]</li>
           <li class="fragment">
           Asm.js &rarr; "Assembly Language" as JavaScript</li>
+          <li class="fragment">
+          <b>Na</b>tive <b>Cl</b>ient &rarr; <b>NaCl</b></li>
+          <li class="fragment">
+          <b>P</b>ortable <b>Na</b>tive <b>Cl</b>ient
+          &rarr; <b>PNaCl</b></li>
         </ul>
         </section>
 
@@ -108,7 +119,7 @@
 
 
         <section
-        data-background-video="videos/slime.mp4"
+        data-background-video="videos/heat_vision.mp4"
         data-background-color="#000">
         <h2>Native Code</h2>
         <ul>
@@ -161,7 +172,7 @@
         </section>
 
         <section
-        data-background-video="videos/asmback.mp4"
+        data-background-video="videos/waves.mp4"
         data-background-color="#000">
         <h2>APIs</h2>
         <ul>
@@ -248,10 +259,9 @@
         </section>
 
         <section
-        data-background-video="wand_sparkle3.mp4"
-        data-background-video-loop="loop"
+        data-background-video="videos/slime.mp4"
         data-background-color="#000">
-        <h2>But I'm a <s>JavaScript</s> Forth developer...</h2>
+        <h2>But I'm a JavaScript developer...</h2>
         <ul>
           <li class="fragment">C/C++ libraries</li>
           <li class="fragment">Codecs</li>
@@ -263,8 +273,7 @@
 
 
         <section
-        data-background-video="obelisk.mp4"
-        data-background-video-loop="loop"
+        data-background-video="videos/waves.mp4"
         data-background-color="#000">
         <h2>Aren't JavaScript + the DOM enough?</h2>
         <ul>
@@ -276,18 +285,17 @@
         </section>
 
         <section
-        data-background-video="js_perf.mp4"
+        data-background-video="videos/js_perf.mp4"
         data-background-color="#000">
         </section>
 
         <section
-        data-background-video="memory.mp4"
+        data-background-video="videos/memory.mp4"
         data-background-color="#000">
         </section>
 
         <section
-        data-background-video="wand_sparkle3.mp4"
-        data-background-video-loop="loop"
+        data-background-video="videos/asmback.mp4"
         data-background-color="#000">
         <h3>JavaScript "Type Declarations"</h3>
         <ul>
@@ -321,87 +329,19 @@ function MyAsmModule(stdlib, foreign, heap) {
 
 
         <section
-        data-background-video="wand_sparkle2.mp4"
-        data-background-video-loop="loop"
+        data-background-video="videos/slime.mp4"
         data-background-color="#000"
         data-transition="zoom">
         <h1>Is it <i>safe</i>?</h1>
         </section>
 
         <section
-        data-background-video="text_good_witch.mp4"
+        data-background-video="videos/bad_activex.mp4"
         data-background-color="#000">
         </section>
 
         <section
-        data-background-video="wand_sparkle3.mp4"
-        data-background-video-loop="loop"
-        data-background-color="#000">
-        <h2>The Good Stuff</h2>
-        <ul>
-          <li class="fragment">High Performance
-          <ul>
-            <li class="fragment">Games / Physics Engines</li>
-            <li class="fragment">Video / Image Processing</li>
-            <li class="fragment">Compression</li>
-            <li class="fragment">Encryption</li>
-          </ul>
-          </li>
-          <li class="fragment">Compatibility</li>
-          <ul>
-            <li class="fragment">Port non-JS apps, as is</li>
-            <li class="fragment">Language freedom</li>
-            <li class="fragment">Maybe more APIs</li>
-          </ul>
-          </li>
-        </ul>
-        </section>
-
-        <section
-        data-background-video="text_bad_witch.mp4"
-        data-background-color="#000">
-        </section>
-
-        <section
-        data-background-video="cauldron_darker.mp4"
-        data-background-video-loop="loop"
-        data-background-color="#000">
-        <h2>The Bad Stuff</h2>
-        <ul>
-          <li class="fragment">Malware
-          <ul>
-            <li class="fragment">Steals your data</li>
-            <li class="fragment">Stays around when you leave the page</li>
-            <li class="fragment">Pretends to be something else</li>
-            <li class="fragment">Eavesdrops on you</li>
-          </ul>
-          </li>
-          <li class="fragment">Portability</li>
-          <ul>
-            <li class="fragment">Architecture dependent</li>
-            <li class="fragment">OS dependent</li>
-            <li class="fragment">Browser dependent</li>
-            <li class="fragment">Configuration dependent</li>
-          </ul>
-          </li>
-        </ul>
-        </section>
-
-        <section
-        data-background-video="obelisk.mp4"
-        data-background-video-loop="loop"
-        data-background-color="#000">
-        <h1>Good witch or bad witch?</h1>
-        </section>
-
-        <section
-        data-background-video="bad_activex.mp4"
-        data-background-color="#000">
-        </section>
-
-        <section
-        data-background-video="cauldron_darker.mp4"
-        data-background-video-loop="loop"
+        data-background-video="videos/slime.mp4"
         data-background-color="#000">
         <h2>Technology Graveyard</h2>
         <ul>
@@ -523,11 +463,6 @@ function MyAsmModule(stdlib, foreign, heap) {
 
 
         <section
-        data-background-video="time1.mp4"
-        data-background-color="#000">
-        </section>
-
-        <section
         data-background-video="SIMD.js.mp4"
         data-background-color="#000">
         </section>
@@ -584,11 +519,6 @@ function vec4average(a) {
         </section>
 
         <section
-        data-background-video="ball_split.mp4"
-        data-background-color="#000">
-        </section>
-
-        <section
         data-background-video="videos/SABback.mp4"
         data-background-color="#000">
         <h2>Threads in JavaScript</h2>
@@ -612,11 +542,6 @@ function vec4average(a) {
           <li class="fragment">Shared Memory + Web APIS</li>
           <li class="fragment">Will it change how Web apps work?</li>
         </ul>
-        </section>
-
-        <section
-        data-background-video="WebAssembly.mp4"
-        data-background-color="#000">
         </section>
 
         <section
@@ -660,8 +585,7 @@ function vec4average(a) {
         </section>
 
         <section
-        data-background-video="wand_sparkle3.mp4"
-        data-background-video-loop="loop"
+        data-background-video="videos/waves.mp4"
         data-background-color="#000">
         <h2>Planning Ahead</h2>
         <ul>
@@ -671,25 +595,11 @@ function vec4average(a) {
         </ul>
         </section>
 
-        <section
-        data-background-video="wand_sparkle2.mp4"
-        data-background-video-loop="loop"
-        data-background-color="#000"
-        data-transition="zoom">
-        <h1>The future is coming FAST</h1>
-        </section>
-
-        <section
-        data-background-video="ball_build.mp4"
-        data-background-color="#000">
-        </section>
-
 
 
 
         <section
-        data-background-video="wand_sparkle3.mp4"
-        data-background-video-loop="loop"
+        data-background-video="videos/heat_vision.mp4"
         data-background-color="#000">
         <h2>How can I start TODAY!?</h2>
         <ul>
@@ -703,7 +613,7 @@ function vec4average(a) {
         </section>
 
         <section
-        data-background-video="videos/asmback.mp4"
+        data-background-video="videos/heat_vision.mp4"
         data-background-color="#000">
         <h2>Where does it run?</h2>
         <ul>
