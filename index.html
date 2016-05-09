@@ -26,9 +26,54 @@
     </script>
 
     <style>
-      b {
-        color: yellow;
-      }
+.reveal section img {
+  border: 0;
+  background-color: rgba(0,0,0,0);
+}
+
+b {
+  color: yellow;
+}
+
+.reveal .boxy table {
+  width: 100%;
+  border-collapse: separate;
+  border-bottom: none;
+}
+
+.reveal .boxy td {
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: none;
+  border-spacing: 20px;
+/*  border: 0; */
+}
+
+.reveal .boxy div.box1 {
+  background-color: #4c4;
+  border: 1px solid;
+  border-color: black;
+  padding: 10px;
+  margin: 10px;
+  font-size: 2.11em;
+}
+
+.reveal .boxy div.box2 {
+  background-color: #f44;
+  border: 1px solid;
+  border-color: black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.reveal .boxy div.box3 {
+  background-color: #44f;
+  border: 1px solid;
+  border-color: black;
+  padding: 10px;
+  margin: 10px;
+}
+
     </style>
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
@@ -105,7 +150,8 @@
           <b>Em</b>script<b>en</b>
           &rarr; [<b>Put into</b>] script [<b>become</b>]</li>
           <li class="fragment">
-          Asm.js &rarr; "Assembly Language" as JavaScript</li>
+          <b>Asm.js</b> &rarr;
+          <b>As</b>se<b>m</b>bly Language as <b>J</b>ava<b>S</b>cript</li>
           <li class="fragment">
           <b>Na</b>tive <b>Cl</b>ient &rarr; <b>NaCl</b></li>
           <li class="fragment">
@@ -203,32 +249,32 @@
         data-background-color="#000">
         </section>
 
-        <section>
+        <section data-background-color="#000">
         <img src="images/quick_office.png"/>
         </section>
 
-        <section>
+        <section data-background-color="#000">
         <img src="images/google_photos.png"/>
         </section>
 
-        <section>
+        <section data-background-color="#000">
         <h4>GNU Image Manipulation Program (GIMP)</h4>
         <img src="images/gimp2.png"/>
         </section>
 
-        <section>
+        <section data-background-color="#000">
         <img src="images/video_stream.png"/>
         </section>
 
-        <section>
+        <section data-background-color="#000">
         <img src="images/google_voice.png"/>
         </section>
 
-        <section>
+        <section data-background-color="#000">
         <img src="images/play_music.png"/>
         </section>
 
-        <section>
+        <section data-background-color="#000">
         <img src="images/vnc.png"/>
         </section>
 
@@ -237,24 +283,24 @@
         data-background-color="#000">
         </section>
 
-        <section>
+        <section data-background-color="#000">
         <h3>Android &rarr; ChromeOS</h3>
         <img src="images/arc_welder.png"/>
         </section>
 
-        <section>
+        <section data-background-color="#000">
         <img src="images/duolingo.png"/>
         </section>
 
-        <section>
+        <section data-background-color="#000">
         <img src="images/evernote.png"/>
         </section>
 
-        <section>
+        <section data-background-color="#000">
         <img src="images/overdrive.png"/>
         </section>
 
-        <section>
+        <section data-background-color="#000">
         <img src="images/vine.png"/>
         </section>
 
@@ -308,7 +354,7 @@
         </ul>
         </section>
 
-        <section>
+        <section data-background-color="#000">
         <pre><code data-trim>
 function MyAsmModule(stdlib, foreign, heap) {
   "use asm";
@@ -355,8 +401,7 @@ function MyAsmModule(stdlib, foreign, heap) {
 
 
         <section
-        data-background-video="wand_sparkle3.mp4"
-        data-background-video-loop="loop"
+        data-background-video="videos/naclback.mp4"
         data-background-color="#000">
         <h3>Security for Native Code</h3>
         <ul>
@@ -367,8 +412,7 @@ function MyAsmModule(stdlib, foreign, heap) {
         </section>
 
         <section
-        data-background-video="wand_sparkle3.mp4"
-        data-background-video-loop="loop"
+        data-background-video="videos/naclback.mp4"
         data-background-color="#000">
         <h3>What makes NaCl safe?</h3>
         <ul>
@@ -382,8 +426,7 @@ function MyAsmModule(stdlib, foreign, heap) {
         </section>
 
         <section
-        data-background-video="wand_sparkle3.mp4"
-        data-background-video-loop="loop"
+        data-background-video="videos/naclback.mp4"
         data-background-color="#000">
         <h2>Process Sandbox (NaCl)</h2>
         <table class="boxy">
@@ -426,8 +469,7 @@ function MyAsmModule(stdlib, foreign, heap) {
         </section>
 
         <section
-        data-background-video="wand_sparkle3.mp4"
-        data-background-video-loop="loop"
+        data-background-video="videos/naclback.mp4"
         data-background-color="#000">
         <h3>Software Fault Isolation<br/><h3>(NaCl Inner Sandbox)</h4></h3>
         <ul>
@@ -443,8 +485,7 @@ function MyAsmModule(stdlib, foreign, heap) {
         </section>
 
         <section
-        data-background-video="wand_sparkle3.mp4"
-        data-background-video-loop="loop"
+        data-background-video="videos/naclback.mp4"
         data-background-color="#000">
         <h3>Software Fault Isolation<br/><h3>(NaCl Inner Sandbox)</h4></h3>
         <table class="boxy">
@@ -463,14 +504,8 @@ function MyAsmModule(stdlib, foreign, heap) {
 
 
         <section
-        data-background-video="SIMD.js.mp4"
-        data-background-color="#000">
-        </section>
-
-        <section
         data-background-video="videos/SIMDback.mp4"
         data-background-color="#000">
-        <h2>SIMD.js</h2>
         <ul>
           <li class="fragment">
           SIMD &rarr; Single Instruction, Multiple Data</li>
@@ -487,7 +522,7 @@ function MyAsmModule(stdlib, foreign, heap) {
         </ul>
         </section>
 
-        <section>
+        <section data-background-color="#000">
         <pre><code data-trim>
 function vec4average(a) {
   var a_length = a.length;
@@ -499,11 +534,6 @@ function vec4average(a) {
   return SIMD.div(sum, SIMD.Float32x4.splat(n));
 }
         </code></pre>
-        </section>
-
-        <section
-        data-background-video="SharedArrayBuffers.mp4"
-        data-background-color="#000">
         </section>
 
         <section
@@ -566,7 +596,7 @@ function vec4average(a) {
         </ul>
         </section>
 
-        <section>
+        <section data-background-color="#000">
         <pre><code data-trim>
 (func $aligned (result i32)
   (local i32 i32 i32)
@@ -626,7 +656,10 @@ function vec4average(a) {
         </ul>
         </section>
 
-        <section>
+        <section
+        data-background-video="videos/slime.mp4"
+        data-background-video-loop="loop"
+        data-background-color="#000">
           <h1>Questions?</h1>
           <p>NaCl SDK: <br/>
              <a href="http://gonacl.com">http://gonacl.com</a></p>
